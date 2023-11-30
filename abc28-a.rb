@@ -1,11 +1,11 @@
-n = gets.to_i
-
-if n <= 59
- puts "bad"
-elsif n<=89
- puts "Good"
-elsif n<=99
- puts "Great"
-else
- puts "Perfect"
+(1..100).each do |i|
+ if i%3 == 0 && i%5 == 0
+   puts "FizzBuzz"
+ elsif i%5 == 0
+   puts "Buzz"
+ elsif i%3 == 0
+   puts "Fizz"
+ else
+   puts i 
+ end
 end
